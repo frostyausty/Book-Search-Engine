@@ -39,9 +39,9 @@ const resolvers = {
         },
         saveBook: async(parent, {input}, context) => {
             if(context.user) {
-                const updateUser = await User.findOneAndUpdate(
+                const updateUser = await User.findByIdAndUpdate(
                     { _id: context.user._id },
-                    { $addToSet: { savedBooks: input}},
+                    { $push: { savedBooks: input}},
                     { new: true }
                 );
                 return updateUser;
