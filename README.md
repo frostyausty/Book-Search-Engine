@@ -3,7 +3,7 @@
 
 ## Description
 
-This repo contains a MERN stack web application that lets users search for books. In order to save books to thier reading list a user must login or signup. I also used GraphQL to pull data from the google book API. Feel free to try the application in the link below. 
+This repo contains a MERN stack web application that allows a user to search for books. Users can save books to their reading list when they login or signup. GraphQL is utilized to pull data from a Google book API and create the users reading list, as well as remove books from the list. Feel free to try the application in the deployed link below!
 
 
 ## Built with
